@@ -15,7 +15,7 @@
   </style>
 </head>
 <body>
-  <!-- Make a div with id placeholder. This is where the plot goes -->
+  <!-- Make a div with id flot-histogram. This is where the plot goes -->
   <div id="flot-histogram"></div>
 
   <script type="text/javascript">
@@ -25,8 +25,8 @@
       // the result into something we can use easily with Flot
       function buildHistogram(data, bw) {
         var minx = d3.min(data),
-        maxx = d3.max(data),
-        nbins = Math.floor((maxx-minx) / bw);
+            maxx = d3.max(data),
+            nbins = Math.floor((maxx-minx) / bw);
 
         var histogram = d3.layout.histogram();
         histogram.bins(nbins);
