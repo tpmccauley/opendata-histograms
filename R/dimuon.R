@@ -1,7 +1,7 @@
 # <thomas.mccauley@cern.ch>
 
 # read in the dimuon csv file:
-dimuons <- read.csv(file="Run2010B_Mu_AOD_Apr21ReReco-v1-dimuon.csv")
+dimuons <- read.csv(file="../data/MuRun2010B_0.csv")
 
 # select for events where the 2 muons have opposite-sign
 dimuons.oppsigns <- subset(dimuons, dimuons$Q1*dimuons$Q2 == -1)
